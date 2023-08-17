@@ -1,0 +1,73 @@
+/* Basic form styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+/* Input styling */
+label,
+input,
+select,
+button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+/* Error message styling */
+.error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Avatar preview styling */
+.avatar-preview {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-preview img {
+  width: 100px;
+  height: 100px;
+  border-radius: 90%; /* Create a circular shape */
+  border: 2px solid #3498db; /* Add a border */
+  object-fit: cover; /* Maintain image aspect ratio */
+  margin-left: 10px;
+}
